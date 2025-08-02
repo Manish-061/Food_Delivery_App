@@ -1,0 +1,127 @@
+.listfood-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Table Styles */
+.listfood-table thead th {
+  font-weight: 600;
+  font-size: 1rem;
+  background: #f7f9fa;
+  letter-spacing: 0.03em;
+}
+.listfood-table tbody tr {
+  vertical-align: middle;
+}
+.rounded-image {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+.delete-btn {
+  transition: background 0.13s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.13s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.delete-btn:hover {
+  background: #ffe3e3;
+  border-color: #ffbdbd;
+}
+
+/* Modal Backdrop */
+.modal-backdrop-custom {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  background: rgba(30, 34, 46, 0.17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: modalBackdropFadeIn 0.16s;
+}
+
+/* Modal Window */
+.modal-custom {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 28px rgba(20, 20, 30, 0.19);
+  min-width: 320px;
+  max-width: 96vw;
+  padding: 2rem 2rem 1.3rem 2rem;
+  animation: modalIn 0.25s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.modal-header-custom {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1.1rem;
+}
+
+.modal-title-custom {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+}
+
+.modal-body-custom {
+  font-size: 1.08rem;
+  margin-bottom: 1.4rem;
+  color: #3b4154;
+}
+
+.modal-footer-custom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+@keyframes modalBackdropFadeIn {
+  from {
+    background: rgba(30, 34, 46, 0);
+  }
+  to {
+    background: rgba(30, 34, 46, 0.17);
+  }
+}
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 700px) {
+  .listfood-container {
+    padding: 0 !important;
+  }
+  .listfood-table thead {
+    display: none;
+  }
+  .listfood-table tbody td {
+    display: block;
+    border: none;
+    padding: 8px 16px !important;
+    width: 100%;
+  }
+  .listfood-table tbody tr {
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid #eee !important;
+    box-shadow: 0px 0px 3px #eee;
+    border-radius: 0.8rem;
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .modal-custom {
+    min-width: 90vw;
+    padding: 1.1rem;
+  }
+  .modal-title-custom {
+    font-size: 1rem;
+  }
+}
