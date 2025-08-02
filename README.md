@@ -145,12 +145,7 @@ export AWS_SECRET_KEY="your-aws-secret-key"
 ### MongoDB Setup
 
 1. **Local MongoDB**: Install and start MongoDB on port 27017
-2. **MongoDB Atlas**: Update the connection string in `application.properties`
-
-```properties
-# For MongoDB Atlas
-spring.data.mongodb.uri=mongodb+srv://username:password@cluster.mongodb.net/foodies
-```
+2. **MongoDB**: Update the connection string in `application.properties`
 
 ## 🏃‍♂️ Running the Application
 
