@@ -1,0 +1,45 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore logs and temp files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore local environment variables
+.env
+
+# Vite ignore
+.vite
+
+# Ignore IDE specific files
+.idea/
+*.iml
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Maven ignore
+target/
+
+# Ignore AWS keys and sensitive files
+aws-credentials.json
+*.pem
+*.cer
+
+# Ignore all file starting with .env.*
+.env.*
+
+# Ignore miscellaneous
+*.swo
+*.swp
+*.swn
+*.bak
+

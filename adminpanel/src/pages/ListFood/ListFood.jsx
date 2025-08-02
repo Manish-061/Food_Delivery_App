@@ -60,7 +60,7 @@ const ListFood = () => {
           {list.length} item{list.length !== 1 ? "s" : ""}
         </span>
       </div>
-      <div className="card shadow-sm rounded-4">
+      <div className="card shadow-sm">
         <div className="table-responsive">
           <table className="table align-middle table-hover table-striped mb-0 listfood-table">
             <thead className="table-light">

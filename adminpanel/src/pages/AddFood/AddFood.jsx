@@ -171,7 +171,7 @@ const AddFood = () => {
                         name="price"
                         onChange={onChangeHandler}
                         value={data.price}
-                        placeholder="25.00"
+                        placeholder="250.00"
                         min="0"
                         step="0.01"
                       />

@@ -33,5 +33,48 @@ build/
 .vscode/
 
 ### Environment Variables ###
+# Protects sensitive data like database passwords, API keys, etc.
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*
 *.env
+
+### AWS Credentials and Keys ###
+# Protects AWS access keys and other cloud credentials
+aws-credentials.json
+*.pem
+*.cer
+*.key
+credentials.properties
+secrets.properties
+
+### Database Configuration ###
+# Protects database connection strings and credentials
+database.properties
+jdbc.properties
+
+### Application Secrets ###
+# Protects application-specific secrets
+application-secrets.properties
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+### Logs and Temporary Files ###
+# Additional log patterns
+*.log.*
+*.out
+*.tmp
+hs_err_pid*
+
+### Security Files ###
+# SSL certificates and keystore files
+*.jks
+*.p12
+*.crt
+*.der
+keystore
+truststore
