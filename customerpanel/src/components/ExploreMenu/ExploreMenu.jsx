@@ -16,8 +16,8 @@ const ExploreMenu = ({ category, setCategory }) => {
     <div className="explore-menu-section">
       <div className="explore-menu-header">
         <div className="header-text-group">
-          <h2 class="explore-menu-title">Explore Your Cravings</h2>
-          <p class="explore-menu-subtitle">
+          <h2 className="explore-menu-title">Explore Your Cravings</h2>
+          <p className="explore-menu-subtitle">
             Find your next favorite meal by category, from local classics to
             global flavors.
           </p>
